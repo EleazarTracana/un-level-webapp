@@ -1,23 +1,23 @@
 import Navbar from "./Navbar";
 import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Business from "./Business";
+import SecondaryOverview from "./SecondaryOverview";
 import Clients from "./Clients";
 import CTA from "./CTA";
 import Stats from "./Stats";
 import Footer from "./Footer";
 import Testimonials from "./Testimonials";
-import Hero from "./Hero";
+import Overview from "./Overview";
+import Roadmap from "./Roadmap";
 
 export {
   Navbar,
   Billing,
-  CardDeal,
-  Business,
+  SecondaryOverview,
   Clients,
   CTA,
   Stats,
   Footer,
   Testimonials,
-  Hero,
+  Overview,
+  Roadmap
 };

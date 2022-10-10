@@ -8,15 +8,17 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
-
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
+    <nav className="w-full flex py-4 justify-between items-center navbar">
+      
+      <ul className="list-none sm:flex hidden justify-evenly items-center flex-1">
+      {/*<li>
+        <img src="/src/assets/un_level_logo_white.png" width={100} height={100} />
+      </li> */}
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
+              active === nav.title ? "text-black" : "text-dimBlack"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >

@@ -1,26 +1,36 @@
 import styles from "./style";
-import { Billing, Business, CardDeal, Clients, CTA, Footer, Navbar, Stats, Testimonials, Hero } from "./components";
+import "animate.css/animate.min.css";
+import { Billing, SecondaryOverview, Clients, CTA, Footer, Navbar, Stats, Testimonials, Overview, Roadmap } from "./components";
 
 const App = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-white w-full overflow-hidden">
     <div className={`${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Navbar />
       </div>
     </div>
 
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-white ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Hero />
+        <Overview />
       </div>
     </div>
     
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-black ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <Stats />
-        <Business />
+      <SecondaryOverview />
+      </div>
+    </div>
+
+    <div className={`bg-black ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Roadmap />
+      </div>
+    </div>
+    
+    <div className={`bg-black ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
         <Billing />
-        <CardDeal />
         <Testimonials />
         <Clients />
         <CTA />
