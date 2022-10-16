@@ -8,6 +8,7 @@ import Footer from "./Footer";
 import Testimonials from "./Testimonials";
 import Overview from "./Overview";
 import Roadmap from "./Roadmap";
+import OurMission from "./OurMission";
 
 export {
   Navbar,
@@ -19,5 +20,6 @@ export {
   Footer,
   Testimonials,
   Overview,
-  Roadmap
+  Roadmap,
+  OurMission
 };

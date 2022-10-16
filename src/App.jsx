@@ -1,6 +1,6 @@
 import styles from "./style";
 import "animate.css/animate.min.css";
-import { Billing, SecondaryOverview, Clients, CTA, Footer, Navbar, Stats, Testimonials, Overview, Roadmap } from "./components";
+import { Billing, SecondaryOverview, Clients, CTA, Footer, Navbar, Stats, Testimonials, Overview, Roadmap, OurMission } from "./components";
 
 const App = () => (
   <div className="bg-white w-full overflow-hidden">
@@ -19,6 +19,12 @@ const App = () => (
     <div className={`bg-black ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
       <SecondaryOverview />
+      </div>
+    </div>
+
+    <div className={`bg-black ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+      <OurMission />
       </div>
     </div>
 
