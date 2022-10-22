@@ -8,8 +8,19 @@
   --black-gradient: linear-gradient(
     144.39deg,
     #ffffff -278.56%,
+    #11101d 70.61%
+  );
+  --black-gradient-timeline: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
     #a22c49 -78.47%,
-    #11101d 50.61%
+    #11101d 80.61%
+  );
+  --black-gradient-utility: linear-gradient(
+    144.39deg,
+    #ffffff -300.56%,
+    #a22c49 -78.47%,
+    #11101d 80.61%
   );
   --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
@@ -117,8 +128,27 @@
 }
 
 .our-mission {
-  background: var(--black-gradient);
+  background-color: #a22c49;
+  border: 2px solid rgb(59, 62, 157);
   box-shadow: var(--card-shadow);
+}
+
+.timeline-content-card {
+  background: var(--black-gradient-timeline);
+  box-shadow: var(--card-shadow);
+}
+
+.nft-utility-container {
+  background: url("../src/assets/background-neon-v1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.nft-utility-card { 
+  border: 2px solid rgb(59, 62, 157);
+  margin-right: 2.5rem;
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .blue__gradient {
@@ -138,6 +168,19 @@
 
 .un_level_color {
   color: #a22c49;
+}
+
+.bg-un-level {
+  background-color: #a22c49;
+}
+
+.disabled-button {
+  cursor: not-allowed;
+}
+
+.bg-launch-app {
+  opacity: 1; 
+  background: linear-gradient(90deg, rgb(68, 68, 68) 0%, rgb(106, 106, 109) 100%) 0% 0% no-repeat padding-box padding-box transparent;
 }
 
 .m-auto {

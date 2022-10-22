@@ -1,103 +1,112 @@
 import styles, { layout } from "../style";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { Timeline, TimelineItem, TimelineDot, TimelineConnector, TimelineSeparator, TimelineContent, TimelineOppositeContent } from '@mui/lab';
-import laptopImage from "../assets/un_level_laptop.png";
-import partnerships from "../assets/un_level_partnerships.png";
- 
-
-const items = [
-  {
-    name: "Website",
-    active: true
-  },
-  {
-    name: "Partnerships",
-    active: true
-  },
-  {
-    name: "Private Sale",
-    active: true
-  }
-]
-
 
 const Roadmap = () =>  (
   <section id="roadmap" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
     <div className={`xl:px-0 sm:px-16 px-6 ${layout.sectionRoadmap}`}>
       <h2 className={`${styles.heading2} lg:py-16 xl:py-16 md:py-16 sm:py-16 py-16`}>
-        Roadmap 1.0
+        Roadmap
       </h2>
       
       <div className={`flex-1  flex-col xl:px-0 sm:px-16 px-6`}>
       <Timeline position="alternate">
-      <AnimationOnScroll animateIn="animate__fadeInUp">
-        <TimelineItem>
-          <TimelineOppositeContent className="text-white">
-           <p className={styles.paragraphWhite}>Q4 2022</p>
-           <p className={styles.paragraphWhite}>
-              <br className="sm:block hidden" />
-              All Un-Level NFTs will be available on our website</p>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot />
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent className="text-white">
-            <p className={styles.paragraphWhite}>Website</p>
-             <img src={laptopImage}  className="m-auto"/>
-            </TimelineContent>
-        </TimelineItem>
-        </AnimationOnScroll>
-        <AnimationOnScroll animateIn="animate__fadeInUp">
         <TimelineItem>
           <TimelineOppositeContent>
-          <p className={styles.paragraphWhite}>Partnerships</p>  
-          <img src={partnerships} className="m-auto" />        
+          <AnimationOnScroll animateIn="animate__fadeInLeft">
+           <p className={styles.paragraphWhite}>Q4 2022</p>
+           <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
+                "With great power comes great responsibility". <br className="sm:block hidden" />
+                 As we develop the Un-Level DApp, we will also working on our Ambassadors Program. A program mainly focused 
+                on spreading our vision and values through top level influencers.
+              </p>
+          </AnimationOnScroll>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent className="text-white">
+            <p className={styles.paragraphWhite}>Spreading Un-Level vision</p>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+          <AnimationOnScroll animateIn="animate__fadeInRight">
           <p className={styles.paragraphWhite}>Q1 2023</p>
-          <p className={styles.paragraphWhite}>
-          <br className="sm:block hidden" />
-          {" "}We want to deliver to our community 10.000 Unique molecules, available for minting through our website 
-              <br className="sm:block hidden" />{" "} Each unique Un-Level 
+          <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
+            We will adding to the board strategic partners that will help us along the way and provides us with real utilities to our NFT holders. 
             </p> 
-          </TimelineContent>
-        </TimelineItem>
-        </AnimationOnScroll>
-        <TimelineItem>
-          <TimelineOppositeContent className="text-white">
-          <p className={styles.paragraphWhite}>
-          Marketplace - Q2 2023
-          </p>
+            </AnimationOnScroll>  
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent className="text-white">
-            <p className={styles.paragraphWhite}>
-            We'll be Open Sea partners, but also include our own marketplace with
-            flexible fees and more exciting features.
-            </p>
+          <p className={styles.paragraphWhite}>Grow as we go</p>  
           </TimelineContent>
         </TimelineItem>
         <TimelineItem>
-          <TimelineOppositeContent className="text-white">
-            9:00 am
+          <TimelineOppositeContent>
+          <AnimationOnScroll animateIn="animate__fadeInLeft">
+            <p className={styles.paragraphWhite}>Q1 2023</p>
+            <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
+              Minting goes live on ETH over a smart contract fully audited by third parties such as Hacken.
+            </p>
+            </AnimationOnScroll>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
             <TimelineConnector />
           </TimelineSeparator>
-          <TimelineContent>Repeat</TimelineContent>
+          <TimelineContent>
+          <p className={styles.paragraphWhite}>
+            Public Sale
+          </p>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+          <AnimationOnScroll animateIn="animate__fadeInRight">
+            <p className={styles.paragraphWhite}>Q2 2023</p>
+            <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
+              On the second quarter of 2023 we will be releasing our first version of Un-Level DApp, providing key features to our community.
+            </p>
+            </AnimationOnScroll>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+          <p className={styles.paragraphWhite}>
+            MVP Un-Level DApp
+          </p>
+          </TimelineContent>
+        </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent>
+          <AnimationOnScroll animateIn="animate__fadeInLeft">
+            <p className={styles.paragraphWhite}>Q3/Q4 2023</p>
+            <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
+              We will release our first Metaverse room available to only NFT Holders, 
+              hosting meetups and coaching sessions to create the Synergy of a high value community  
+            </p>
+            </AnimationOnScroll>
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot />
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent>
+          <p className={styles.paragraphWhite}>
+            Metaverse
+          </p>
+          </TimelineContent>
         </TimelineItem>
       </Timeline>
       </div>
-
     </div>
   </section>
 );

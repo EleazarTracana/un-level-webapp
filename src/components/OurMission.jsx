@@ -3,10 +3,10 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const OurMission = () => {
     return (
-        <section id="about-us">
+        <section id="about-us" className="py-16">
          <AnimationOnScroll animateIn="animate__fadeInUp">
-        <div id="row" className={`flex md:flex-row flex-col py-12`}>
-        <div className={`flex-1 px-6 py-12 ${styles.flexCenter}  flex-col xl:pr-4 sm:py-16 xl:py-16 our-mission rounded-full`}>
+        <div id="row" className={`flex md:flex-row flex-col py-12 px-36`}>
+        <div className={`flex-1 px-6 py-12 ${styles.flexCenter} flex-col xl:pr-4 sm:py-16 xl:py-16  timeline-content-card rounded-full`}>
             <h2 className={`font-poppins font-semibold text-white xs:text-[48px] text-[40px]`}>
                 Our Mission
             </h2>
