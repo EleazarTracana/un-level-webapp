@@ -3,7 +3,7 @@ import evolutionLadder from "../assets/evolution-ladder-1.png"
 
 const SecondaryOverview = () =>  (
   <section id="features">
-    <div id="row" className={`flex md:flex-row flex-col ${styles.paddingY} px-8 lg:px-16 sm:px-4`}>
+    <div id="row" className={`flex md:flex-row flex-col ${styles.paddingY} px-3 xl:px-16 lg:px-16 sm:px-4`}>
     <div className={`flex-1 ${styles.flexEnd} order-last px-6 py-12 sm:order-last md:order-first xl:order-first flex-col xl:pr-4 sm:py-16 xl:py-8`}>
        <img src={evolutionLadder} />
     </div>
@@ -30,7 +30,7 @@ const SecondaryOverview = () =>  (
 
     </div>
 
-   <div id="row" className={`flex md:flex-row flex-col px-8 lg:px-16 sm:px-4`}>
+   <div id="row" className={`flex md:flex-row flex-col px-3 xl:px-16 lg:px-16 sm:px-4`}>
     <div className={`flex-1 ${styles.flexStart} px-6 flex-col xl:pr-4 `}>
       <p className={`${styles.paragraphWhite} max-w-[470px]`}>
       Every NFT stage will get you a different access to our community's tools and a given weight of vote on our DAO Governance.

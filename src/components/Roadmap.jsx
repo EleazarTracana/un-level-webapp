@@ -4,12 +4,12 @@ import { Timeline, TimelineItem, TimelineDot, TimelineConnector, TimelineSeparat
 
 const Roadmap = () =>  (
   <section id="roadmap" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
-    <div className={`xl:px-0 sm:px-16 px-6 ${layout.sectionRoadmap}`}>
+    <div className={`xl:px-0 sm:px-4 px-4 ${layout.sectionRoadmap}`}>
       <h2 className={`${styles.heading2} lg:py-16 xl:py-16 md:py-16 sm:py-16 py-16`}>
         Roadmap
       </h2>
       
-      <div className={`flex-1  flex-col xl:px-0 sm:px-16 px-6`}>
+      <div className={`flex-1  flex-col xl:px-0 sm:px-4 px-4`}>
       <Timeline position="alternate">
         <TimelineItem>
           <TimelineOppositeContent>
@@ -90,7 +90,7 @@ const Roadmap = () =>  (
           <AnimationOnScroll animateIn="animate__fadeInLeft">
             <p className={styles.paragraphWhite}>Q3/Q4 2023</p>
             <p className={`${styles.paragraphWhite} timeline-content-card rounded-lg py-4 px-4`}>
-              We will release our first Metaverse room available to only NFT Holders, 
+              A Metaverse building available to only NFT Holders, 
               hosting meetups and coaching sessions to create the Synergy of a high value community  
             </p>
             </AnimationOnScroll>
