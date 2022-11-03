@@ -1,7 +1,8 @@
 import { useState } from "react";
 
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
+import logo from "../assets/Un-level-logo-Negro.png"
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -12,7 +13,7 @@ const Navbar = () => {
       
       <ul className="list-none sm:flex hidden justify-evenly items-center flex-1">
       <li>
-        <img src="/src/assets/Un-level-logo-Negro.png" width={100} height={100} />
+        <img src={logo} width={100} height={100} />
       </li>
         {navLinks.map((nav, index) => (
           <li
