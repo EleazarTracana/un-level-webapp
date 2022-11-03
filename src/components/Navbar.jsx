@@ -11,9 +11,9 @@ const Navbar = () => {
     <nav className="w-full flex py-4 justify-between items-center navbar">
       
       <ul className="list-none sm:flex hidden justify-evenly items-center flex-1">
-      {/*<li>
-        <img src="/src/assets/un_level_logo_white.png" width={100} height={100} />
-      </li> */}
+      <li>
+        <img src="/src/assets/Un-level-logo-Negro.png" width={100} height={100} />
+      </li>
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
