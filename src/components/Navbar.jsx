@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import { close, menu } from "../assets";
 import { navLinks } from "../constants";
-import logo from "../assets/Un-level-logo-Negro.png"
+import {logo} from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
@@ -23,7 +23,10 @@ const Navbar = () => {
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
-            <a href={`#${nav.id}`}>{nav.title}</a>
+        { nav.targetBlank ?
+            <a target="_blank" href={nav.id}>{nav.title}</a>
+            : <a href={nav.id}>{nav.title}</a>
+        }
           </li>
         ))}
       </ul>
