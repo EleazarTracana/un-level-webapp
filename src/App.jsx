@@ -1,6 +1,6 @@
 import styles from "./style";
 import "animate.css/animate.min.css";
-import {SecondaryOverview, Clients, Footer, Navbar, Stats, Testimonials, Overview, Roadmap, OurMission, NftUtilities } from "./components";
+import {SecondaryOverview, Clients, Footer, Navbar, Stats, OurTeam, Overview, Roadmap, OurMission, NftUtilities } from "./components";
 
 const App = () => (
   <div className="bg-white w-full overflow-hidden">
@@ -40,11 +40,15 @@ const App = () => (
         <Roadmap />
       </div>
     </div>
+
+    <div className={`bg-white ${styles.flexStart}`}>
+      <div className={`${styles.boxWidth}`}>
+        <OurTeam />
+      </div>
+    </div>
     
     <div className={`bg-black ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Testimonials />
-        <Clients />
         <Footer />
       </div>
     </div>

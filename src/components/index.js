@@ -3,7 +3,7 @@ import SecondaryOverview from "./SecondaryOverview";
 import Clients from "./Clients";
 import Stats from "./Stats";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
+import OurTeam from "./OurTeam";
 import Overview from "./Overview";
 import Roadmap from "./Roadmap";
 import OurMission from "./OurMission";
@@ -15,7 +15,7 @@ export {
   Clients,
   Stats,
   Footer,
-  Testimonials,
+  OurTeam,
   Overview,
   Roadmap,
   OurMission,
