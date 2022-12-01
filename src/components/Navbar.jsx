@@ -1,66 +1,82 @@
-import { useState } from "react";
+import { useState } from 'react'
 
-import { close, menu } from "../assets";
-import { navLinks } from "../constants";
-import {logo} from "../assets";
+import { HiMenu, HiX } from 'react-icons/hi'
+import logo from './../assets/un-level-logo.png'
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-  const [toggle, setToggle] = useState(false);
+	const navLinks = [
+		{
+			id: '#overview',
+			title: 'Overview',
+		},
+		{
+			id: '#team',
+			title: 'Team',
+		},
+		{
+			id: '#about-us',
+			title: 'About Us',
+		},
+		{
+			id: 'https://docs.un-level.com/',
+			title: 'Whitepaper',
+			targetBlank: true,
+		},
+		{
+			id: '#roadmap',
+			title: 'Roadmap',
+		},
+	]
 
-  return (
-    <nav className="w-full flex py-4 justify-between items-center navbar">
-      
-      <ul className="list-none sm:flex hidden justify-evenly items-center flex-1">
-      <li>
-        <img src={logo} width={100} height={100} />
-      </li>
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-black" : "text-dimBlack"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
-          >
-        { nav.targetBlank ?
-            <a target="_blank" href={nav.id}>{nav.title}</a>
-            : <a href={nav.id}>{nav.title}</a>
-        }
-          </li>
-        ))}
-      </ul>
+	const [toggle, setToggle] = useState(false)
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
-        />
+	return (
+		<section
+			about='menu'
+			className='w-full h-16 grid grid-flow-col items-center justify-between bg-white text-black leading-none shadow px-6 translate-x-0 z-10'>
+			<img
+				src={logo}
+				alt='Logo'
+				className='h-full w-auto overflow-hidden'
+			/>
+			<div className='relative h-full w-auto sm:hidden grid place-items-center'>
+				<button
+					className='text-4xl'
+					onClick={() => {
+						setToggle(!toggle)
+					}}>
+					{!toggle && <HiMenu />}
+					{toggle && <HiX />}
+				</button>
+				{toggle && (
+					<div className='absolute right-0 top-full mt-3 h-auto bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 text-neutral-300 grid items-center grid-flow-row text-left w-max p-6 rounded-2xl font-medium'>
+						{navLinks.map((navLink) => {
+							return (
+								<>
+									<a
+										href={navLink.id}
+										target={
+											navLink.targetBlank === true
+												? '_blank'
+												: '_parent'
+										}
+										rel={
+											navLink.targetBlank === true
+												? 'noopener noreferrer'
+												: ''
+										}
+										className='p-3 grid w-auto h-auto text-left'>
+										{navLink.title}
+									</a>
+								</>
+							)
+						})}
+					</div>
+				)}
+			</div>
+			<div className='h-full w-auto hidden sm:grid grid-flow-col items-center justify-end'></div>
+		</section>
+	)
+}
 
-        <div
-          className={`${
-            !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-        >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
-            {navLinks.map((nav, index) => (
-              <li
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
-              >
-                <a href={`#${nav.id}`}>{nav.title}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-    </nav>
-  );
-};
-
-export default Navbar;
+export default Navbar

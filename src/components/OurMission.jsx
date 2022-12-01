@@ -1,23 +1,21 @@
-import styles from "../style";
-import { AnimationOnScroll } from 'react-animation-on-scroll';
-
-const OurMission = () => {
-    return (
-        <section id="about-us" className="py-16">
-         <AnimationOnScroll animateIn="animate__fadeInUp">
-        <div id="row" className={`flex md:flex-row flex-col py-12 xl:px-36 lg:px-36 sm:px-0`}>
-        <div className={`flex-1 px-6 py-12 ${styles.flexCenter} flex-col xl:pr-4 sm:py-16 xl:py-16  timeline-content-card rounded-full`}>
-            <h2 className={`font-poppins font-semibold text-white xs:text-[48px] text-[40px]`}>
-                Our Mission
-            </h2>
-            <p className={`${styles.paragraphWhite} text-center max-w-[750px] mt-5`}>
-               We aim to become the #1 community of growth, connecting people worldwide that share our own values and principles
-               and want to follow us through the next ladder of evolution.
-            </p>
-        </div>
-        </div>
-        </AnimationOnScroll>
-      </section>
-)}
-
-export default OurMission;
+export default function OurMission() {
+	return (
+		<section
+			about='about-us'
+			id='about-us'>
+			<div className='p-3'>
+				<div className='text-center bg-gradient-to-br from-site-primary-700/70 to-site-secondary-800/50 bg-black rounded-[100%] aspect-square flex flex-col place-items-center place-content-center p-12 overflow-hidden'>
+					<h3 className='font-semibold text-white text-3xl leading-loose'>
+						Our Mission
+					</h3>
+					<p className='leading-loose text-sm'>
+						We aim to become the #1 community of growth, connecting
+						people worldwide that share our own values and
+						principles and want to follow us through the next ladder
+						of evolution.
+					</p>
+				</div>
+			</div>
+		</section>
+	)
+}

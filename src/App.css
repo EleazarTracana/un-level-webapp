@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-wrapper {
+	place-items: center;
+}
+
+html::-webkit-scrollbar {
+	display: none;
+}
+
+* {
+	/* IE and Edge */
+	-ms-overflow-style: none;
+	/* Firefox */
+	scrollbar-width: none;
+}
+
+/* Safari and Chrome */
+*::before::-webkit-scrollbar,
+*::-webkit-scrollbar,
+*::after::-webkit-scrollbar {
+	display: none;
+}
+
+.swiper * {
+	transition: all ease 300ms;
+}
+
+.swiper-pagination {
+	bottom: 0px !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	background-color: #6568c5 !important;
+}
+
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background-color: #6568c5 !important;
+}
+
+:root {
+	--swiper-theme-color: #6568c5 !important;
+}
+
+::marker {
+	color: #6568c5;
+}

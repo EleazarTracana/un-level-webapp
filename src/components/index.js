@@ -1,23 +1,19 @@
-import Navbar from "./Navbar";
-import SecondaryOverview from "./SecondaryOverview";
-import Clients from "./Clients";
-import Stats from "./Stats";
-import Footer from "./Footer";
-import OurTeam from "./OurTeam";
-import Overview from "./Overview";
-import Roadmap from "./Roadmap";
-import OurMission from "./OurMission";
-import NftUtilities from "./NftUtilities";
+import Navbar from './Navbar'
+import Overview from './Overview'
+import SecondaryOverview from './SecondaryOverview'
+import OurMission from './OurMission'
+import CommunityTools from './CommunityTools'
+import Roadmap from './Roadmap'
+import OurTeam from './OurTeam'
+import Footer from './Footer'
 
 export {
-  Navbar,
-  SecondaryOverview,
-  Clients,
-  Stats,
-  Footer,
-  OurTeam,
-  Overview,
-  Roadmap,
-  OurMission,
-  NftUtilities
-};
+	Navbar,
+	Overview,
+	SecondaryOverview,
+	OurMission,
+	CommunityTools,
+	Roadmap,
+	OurTeam,
+	Footer,
+}

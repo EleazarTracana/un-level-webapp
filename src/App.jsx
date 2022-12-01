@@ -1,58 +1,42 @@
-import styles from "./style";
-import "animate.css/animate.min.css";
-import {SecondaryOverview, Clients, Footer, Navbar, Stats, OurTeam, Overview, Roadmap, OurMission, NftUtilities } from "./components";
+import './App.css'
+import '@fontsource/poppins/latin.css'
+import {
+	Navbar,
+	Overview,
+	SecondaryOverview,
+	OurMission,
+	CommunityTools,
+	Roadmap,
+	OurTeam,
+	Footer,
+} from './components'
 
-const App = () => (
-  <div className="bg-white w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Navbar />
-      </div>
-    </div>
+import Wave from 'react-wavify'
 
-    <div className={`bg-white ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Overview />
-      </div>
-    </div>
-    
-    <div className={`bg-black ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-      <SecondaryOverview />
-      </div>
-    </div>
-
-    <div className={`bg-black ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-      <OurMission />
-      </div>
-    </div>
-
-    
-    <div className={`bg-black  ${styles.flexCenter}`}>
-      <div className={` ${styles.boxWidthMax}`}>
-      <NftUtilities />
-      </div>
-    </div>
-
-    <div className={`bg-black ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Roadmap />
-      </div>
-    </div>
-
-    <div className={`bg-white ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
-        <OurTeam />
-      </div>
-    </div>
-    
-    <div className={`bg-black ${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
-        <Footer />
-      </div>
-    </div>
-  </div>
-);
-
-export default App;
+export default function App() {
+	return (
+		<div className='bg-black text-white font-normal w-full h-auto min-h-screen antialiased scroll-smooth'>
+			<Navbar />
+			<Overview />
+			<div className='bg-white w-full h-24'>
+				<Wave
+					className='w-full h-full'
+					fill='black'
+					paused={false}
+					options={{
+						height: 20,
+						amplitude: 20,
+						speed: 0.25,
+						points: 2,
+					}}
+				/>
+			</div>
+			<SecondaryOverview />
+			<OurMission />
+			<CommunityTools />
+			<Roadmap />
+			<OurTeam />
+			<Footer />
+		</div>
+	)
+}
