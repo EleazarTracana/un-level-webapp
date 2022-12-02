@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# ToDo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+-   [ ] Optimización general (En progreso) (Checkear al finalizar el resto)
+-   [x] Se reemplazó Vite > React Scripts
 
-## Available Scripts
+1. El area de "community tools" realizar un carrousel dinamico que vaya rotando
+   pero que tenga flechas izquierda y derecha para ir moviendolo si el usuario
+   desea. Este debe ser full responsive y hay que acomodar la imagen de fondo.
 
-In the project directory, you can run:
+-   [x] Implementado
+-   [x] Acomodar fondo
+-   [x] Autoplay
+-   [x] Control anterior-siguiente (si la pantalla > 640px)
+-   [x] Control todas (si la pantalla > 640px)
+-   [x] Full responsive
 
-### `npm start`
+2. El area del Roadmap se realizo con una libreria @mui/lab, funciona
+   correctamente en pantallas grandes pero para mobile habria que acomodarlo
+   para que sea responsive.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+-   [x] Implementado desde cero
+-   [x] Full responsive
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. En el area de Team, habria que hacerla desde cero, la idea es que sea
+   dinamica con un array y se puedan agregar mas team members si se desea. Se
+   deja adjunto un screenshot con un ejemplo de referencia del area de team.
 
-### `npm test`
+-   [x] Implementado desde cero
+-   [x] Carga datos desde array
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Por ultimo, cuando el navbar se colapsa (en mobile) no se esta mostrando el
+   logo, la idea seria comenzar a mostrarlo.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   [x] Se volvió a hacer todo el Navbar
+-   [x] El logo está siempre visible

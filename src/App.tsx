@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import '@fontsource/poppins/latin.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import AboutUs from './sections/About'
+import CommunityTools from './sections/CommunityTools'
+import Mission from './sections/Mission'
+import Overview from './sections/Overview'
+import Roadmap from './sections/Roadmap'
+import Team from './sections/Team'
+import Wave from './components/Wave'
+import Footer from './sections/Footer'
+import Navbar from './sections/Navbar'
+import LayoutApp from './layouts/App'
+
+export default function App() {
+	return (
+		<LayoutApp>
+			<Navbar />
+			<Overview />
+			<Wave />
+			<AboutUs />
+			<Mission />
+			<CommunityTools />
+			<Roadmap />
+			<Wave inverted />
+			<Team />
+			<Wave />
+			<Footer />
+		</LayoutApp>
+	)
 }
-
-export default App;
