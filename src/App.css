@@ -33,3 +33,7 @@
 .debug * {
 	outline: 1px solid hsla(0, 100%, 50%, 0.5);
 }
+
+/* html::-webkit-scrollbar {
+	display: none;
+} */
