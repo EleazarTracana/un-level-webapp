@@ -1,6 +1,11 @@
-# ToDo
+# Sitio web: Un-Level
 
--   [ ] Optimización general (En progreso) (Checkear al finalizar el resto)
+Rework para un cliente. Se realizó desde cero el sitio web, previamente
+existente con algunos errores de diseño.
+
+## ToDo
+
+-   [x] Optimización general (En progreso) (Checkear al finalizar el resto)
 -   [x] Se reemplazó Vite > React Scripts
 
 1. El area de "community tools" realizar un carrousel dinamico que vaya rotando
