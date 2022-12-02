@@ -17,8 +17,6 @@ const commands = [
 
 process.stdout.write('Subiendo...')
 
-commands.forEach((code) => {
-	execSync(code)
-})
+execSync(commands.join(' && '))
 
 process.stdout.write(' listo.\n')
