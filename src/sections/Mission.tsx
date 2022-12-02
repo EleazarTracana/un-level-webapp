@@ -15,7 +15,7 @@ export default function Mission() {
 			about='mission'
 			id='mission'
 			className='py-12'>
-			<div className='container mx-auto w-full max-w-prose p-2'>
+			<div className='container relative mx-auto w-full max-w-prose p-2'>
 				<div className='flex aspect-square w-full flex-col place-content-center place-items-center overflow-hidden rounded-[100%] bg-black bg-gradient-to-br from-site-primary-700/70 to-site-secondary-800/50 p-12 text-center duration-[3000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]'>
 					<h3 className='w-full max-w-prose text-2xl font-semibold leading-loose text-white sm:text-4xl sm:leading-loose'>
 						{data.title}

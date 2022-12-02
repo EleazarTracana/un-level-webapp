@@ -2,10 +2,11 @@
 	"name": "un-level",
 	"version": "0.2.0",
 	"private": true,
-	"homepage": "",
+	"homepage": "/un-level",
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build && node ./scripts.mjs",
+		"build": "react-scripts build && node ./build-after.mjs",
+		"build-upload": "node ./build-upload.mjs",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject"
 	},

@@ -36,7 +36,6 @@ const Navbar = () => {
 	const isDesktop = useMediaQuery('(min-width: 768px)')
 
 	const [toggle, setToggle] = useState(false)
-	const [showNavbar, setShowNavbar] = useState(true)
 
 	const refMenu = useRef<HTMLDivElement>(null)
 
@@ -66,6 +65,9 @@ const Navbar = () => {
 		}
 	}, [toggle])
 
+	const [showNavbar, setShowNavbar] = useState(true)
+	const [navbarBig, setNavbarBig] = useState(true)
+
 	function showNavbarHandler(scrollPos: number) {
 		if (lastScrollDirection === 'up') {
 			setShowNavbar(true)
@@ -75,6 +77,11 @@ const Navbar = () => {
 			scrollPos > window.innerHeight / 4
 		) {
 			setShowNavbar(false)
+		}
+		if (scrollPos >= 64) {
+			setNavbarBig(false)
+		} else {
+			setNavbarBig(true)
 		}
 	}
 
@@ -96,7 +103,11 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className='h-16 bg-white'></div>
+			<div
+				className={
+					' bg-white transition-all' +
+					`${navbarBig && isDesktop ? ' h-24' : ' h-16'}`
+				}></div>
 			<section
 				about='menu'
 				className={
@@ -114,7 +125,11 @@ const Navbar = () => {
 				alt='Logo'
 				className='h-full w-auto overflow-hidden'
 			/> */}
-				<div className='container mx-auto grid h-16 w-full grid-flow-col items-center justify-between'>
+				<div
+					className={
+						'container mx-auto grid w-full grid-flow-col items-center justify-between transition-all' +
+						`${navbarBig && isDesktop ? ' h-24' : ' h-16'}`
+					}>
 					<a
 						href='#top'
 						className='block h-full w-auto overflow-hidden'>

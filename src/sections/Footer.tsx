@@ -1,5 +1,5 @@
 import { ImInstagram, ImLinkedin, ImTwitter } from 'react-icons/im'
-import { ReactComponent as Logo } from './../assets/logo.svg'
+import { ReactComponent as Logo } from './../assets/logo-white.svg'
 
 export default function Footer() {
 	const socialMedia = [
@@ -9,12 +9,12 @@ export default function Footer() {
 			link: 'https://www.instagram.com/unlevel.eth/',
 		},
 		{
-			id: 'social-media-3',
+			id: 'social-media-2',
 			icon: <ImTwitter />,
 			link: 'https://twitter.com/unlevel_eth',
 		},
 		{
-			id: 'social-media-4',
+			id: 'social-media-3',
 			icon: <ImLinkedin />,
 			link: 'https://www.linkedin.com/company/un-level',
 		},

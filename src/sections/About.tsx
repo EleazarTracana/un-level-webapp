@@ -9,8 +9,8 @@ export default function About() {
 				<h3 className='mx-auto max-w-prose origin-left text-4xl font-semibold leading-normal transition-all lg:origin-center lg:text-center'>
 					As you evolve, <br /> your NFT does too
 				</h3>
-				<div className='mx-auto flex max-w-prose flex-col gap-12 pt-6 text-justify text-lg leading-loose'>
-					<p className='transition-all'>
+				<div className='mx-auto grid grid-flow-row gap-12 pt-6 text-justify text-lg leading-loose lg:grid-cols-2 lg:items-center lg:gap-24 lg:pt-24'>
+					<p className='max-w-prose transition-all lg:col-start-2 lg:row-start-1'>
 						We believe that the most valuable asset on earth is
 						time. We have developed a mechanism to make our NFT
 						evolve overtime, just as humans do. This way our digital
@@ -28,11 +28,11 @@ export default function About() {
 					</p>
 					<img
 						loading='lazy'
-						className='h-auto w-full rounded-lg transition-all sm:rounded-3xl'
+						className='h-auto w-full max-w-prose rounded-lg transition-all sm:rounded-3xl lg:col-start-1 lg:row-start-1'
 						src={evolutionLadder}
 						alt=''
 					/>
-					<p className='transition-all'>
+					<p className='max-w-prose transition-all lg:col-span-2 lg:mx-auto'>
 						Every NFT stage will get you a different access to our
 						community's tools and a given weight of vote on our DAO
 						Governance. As you approximate to what we like to call
