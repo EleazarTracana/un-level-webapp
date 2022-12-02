@@ -36,7 +36,7 @@ export default function CommunityTools() {
 		<section
 			about='community-tools'
 			style={{ backgroundImage: `url("${background}")` }}
-			className='container mx-auto bg-cover bg-center py-12 text-center lg:py-24 rounded-full'>
+			className='container mx-auto rounded-full bg-cover bg-center py-12 text-center lg:py-24'>
 			<h3 className='w-full px-6 text-left text-4xl font-semibold leading-snug lg:text-center'>
 				Community Tools
 			</h3>
@@ -44,7 +44,7 @@ export default function CommunityTools() {
 				<Swiper
 					className='h-full w-full translate-x-0 select-none'
 					modules={[Navigation, Pagination, A11y, Autoplay]}
-					spaceBetween={50}
+					spaceBetween={0}
 					autoplay={{}}
 					loop
 					navigation={screenSm}
@@ -53,8 +53,8 @@ export default function CommunityTools() {
 					{slides.map((slide, index) => {
 						return (
 							<SwiperSlide key={index + slide.title}>
-								<div className='h-auto w-full p-6'>
-									<div className='grid aspect-video h-auto w-full place-content-center place-items-center gap-3 rounded-xl bg-site-secondary-900/75 p-1 outline outline-2 outline-site-secondary-500'>
+								<div className=' mb-12 h-auto w-full p-6'>
+									<div className=' grid aspect-video h-auto w-full place-content-center place-items-center gap-3 rounded-xl bg-site-secondary-900/75 p-1 outline outline-2 outline-site-secondary-500'>
 										<h4 className='text-xl font-semibold'>
 											{slide.title}
 										</h4>

@@ -63,7 +63,7 @@ export default function Overview() {
 						)}
 						{video.inDom && (
 							<video
-								muted
+								muted={true}
 								onPlaying={(e) => {
 									setVideo({
 										inDom: true,
@@ -73,22 +73,27 @@ export default function Overview() {
 								}}
 								onCanPlay={(e) => {
 									const target = e.target as HTMLVideoElement
-									target.play()
 									setVideo({
 										inDom: true,
 										scaled: false,
 										canPlay: true,
 									})
+									target.play()
 								}}
-								autoPlay
-								disableRemotePlayback
-								disablePictureInPicture
-								loop
-								src={UnLevelMolecule}
+								playsInline={true}
+								autoPlay={true}
+								disableRemotePlayback={true}
+								disablePictureInPicture={true}
+								loop={true}
 								className={
 									' col-start-1 row-start-1 h-full w-full transform-gpu transition-all delay-300 duration-[3000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]' +
 									`${video.scaled ? ' scale-75' : ' scale-0'}`
-								}></video>
+								}>
+								<source
+									src={UnLevelMolecule}
+									type='video/mp4'
+								/>
+							</video>
 						)}
 					</div>
 				</div>

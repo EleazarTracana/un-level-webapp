@@ -14,10 +14,6 @@
 	transition: all ease 300ms;
 }
 
-.swiper-pagination {
-	bottom: 0px !important;
-}
-
 .swiper-pagination .swiper-pagination-bullet {
 	background-color: #6568c5 !important;
 }

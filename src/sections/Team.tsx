@@ -70,7 +70,7 @@ export default function Team() {
 						{data.map((person, index) => {
 							return (
 								<SwiperSlide key={index + person.name}>
-									<div className='grid h-auto w-full grid-flow-row place-items-center'>
+									<div className=' grid h-auto w-full grid-flow-row place-items-center mb-12'>
 										<div className='grid aspect-[3/4] h-auto w-2/3 place-items-center overflow-hidden rounded-lg bg-gradient-to-br from-site-primary-700 to-site-secondary-700'>
 											{person.picture === '' && (
 												<HiUser className='h-1/2 w-1/2 text-black opacity-50' />
