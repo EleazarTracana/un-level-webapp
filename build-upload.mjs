@@ -1,6 +1,9 @@
 import { execSync } from 'child_process'
 
-const git_url = 'https://github.com/kenzaflow/un-level-source.git'
+// NOTE
+// Build repository - not source...
+
+const git_url = 'https://github.com/kenzaflow/un-level.git'
 
 const commands = [
 	'cd ./build',
