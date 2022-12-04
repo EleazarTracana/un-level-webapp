@@ -26,7 +26,7 @@ export default function Footer() {
 			className='container mx-auto flex h-auto flex-col items-center px-6'>
 			<div className='grid w-full grid-flow-row place-items-center items-center gap-3 py-6 text-center'>
 				<Logo className='h-auto w-24' />
-				<p>A new way to make the payments easy, reliable and secure.</p>
+				<p>The first NFT Collection that evolves overtime. </p>
 			</div>
 			<div className='grid w-full grid-flow-row items-center justify-center gap-6 pb-6 md:grid-flow-col md:justify-between md:p-6 md:pb-12'>
 				<p className='text-center text-sm font-normal'>

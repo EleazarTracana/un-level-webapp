@@ -1,7 +1,7 @@
 import '@fontsource/poppins/latin.css'
 
 import AboutUs from './sections/About'
-import CommunityTools from './sections/CommunityTools'
+import CommunityTools from './sections/HolderBenefits'
 import Mission from './sections/Mission'
 import Overview from './sections/Overview'
 import Roadmap from './sections/Roadmap'

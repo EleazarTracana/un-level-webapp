@@ -12,16 +12,30 @@ export default function CommunityTools() {
 			title: 'Un-Level DApp',
 			content: (
 				<ul className='list-disc text-left'>
-					<li>Digital Content Library</li>
-					<li>Career Booster Program</li>
+					<li><a href="https://docs.un-level.com/products/digital-content-library" target="_blank">Digital Content Library </a></li>
+					<li><a href="https://docs.un-level.com/products/career-booster-program" target="_blank">Career Booster Program </a></li>
+					<li><a href='https://docs.un-level.com/products/ambassador-program' target="_blank">Ambassador Program</a></li>
+					<li><a href='https://docs.un-level.com/products/ambassador-program' target="_blank">Evolution Lab</a></li>
 				</ul>
 			),
 		},
 		{
 			title: 'Metaverse',
+			content: (
+				<ul className='list-disc text-left'>
+					<li><a href="https://docs.un-level.com/products/metaverse" target="_blank">The Big Hall</a></li>
+					<li><a href="https://docs.un-level.com/products/metaverse" target="_blank">Smart Gym</a></li>
+				</ul>
+			),
 		},
 		{
 			title: 'Interoperability',
+			content: (
+				<ul className='list-disc text-left'>
+					<li>The SandBox</li>
+					<li>Decentraland</li>
+				</ul>
+			),
 		},
 	]
 
@@ -38,7 +52,7 @@ export default function CommunityTools() {
 			style={{ backgroundImage: `url("${background}")` }}
 			className='container mx-auto rounded-full bg-cover bg-center py-12 text-center lg:py-24'>
 			<h3 className='w-full px-6 text-left text-4xl font-semibold leading-snug lg:text-center'>
-				Community Tools
+				Holder Benefits
 			</h3>
 			<div className='grid h-auto place-items-center py-6'>
 				<Swiper
