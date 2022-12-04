@@ -7,29 +7,23 @@ import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import useMediaQuery from '../hooks/useMediaQuery'
 
-import perrito from './../resources/perrito.jpg'
-import alguien from './../resources/alguien.jpg'
+import eimmyYanez from './../resources/FOTO EIMMY YAÑEZ.jpg'
+import eleazarTracana from './../resources/FOTO ELEAZAR TRACANA.jpg'
 
 export default function Team() {
 	const data = [
 		{
-			name: 'Alguien',
-			position: 'CEO Assistant',
-			linkedIn: 'https://www.linkedin.com/in/alguien/',
-			picture: alguien,
+			name: 'Eleazar Tracana',
+			position: 'Founder & Project Lead',
+			linkedIn: 'https://www.linkedin.com/in/eleazartracana/',
+			picture: eleazarTracana,
 		},
 		{
-			name: 'Full name no linkedIn & picture and super long',
-			position: 'Position',
-			linkedIn: '',
-			picture: '',
-		},
-		{
-			name: 'Perrito',
-			position: 'CEO / Founder',
-			linkedIn: 'https://www.linkedin.com/in/unperro/',
-			picture: perrito,
-		},
+			name: 'Eimmy Yanez',
+			position: 'Marketing Lead',
+			linkedIn: 'https://www.linkedin.com/in/eimmy-yanez-a175601b6/',
+			picture: eimmyYanez,
+		}
 	]
 
 	const screenSm = useMediaQuery('(min-width: 640px)')
@@ -46,7 +40,7 @@ export default function Team() {
 			className='overflow-hidden bg-white py-16 text-black lg:py-24'>
 			<div className='container mx-auto'>
 				<h3 className='w-full px-6 text-left text-4xl font-semibold leading-snug lg:text-center'>
-					Out Team
+					Our Team
 				</h3>
 				<div className='mx-auto flex max-w-prose flex-col gap-12 px-6 pt-6 text-lg leading-loose lg:text-center'>
 					<p>
