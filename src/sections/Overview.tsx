@@ -87,7 +87,7 @@ export default function Overview() {
 								loop={true}
 								className={
 									' col-start-1 row-start-1 h-full w-full transform-gpu transition-all delay-300 duration-[3000ms] ease-[cubic-bezier(0.34,1.56,0.64,1)]' +
-									`${video.scaled ? ' scale-75' : ' scale-0'}`
+									`${video.scaled ? ' scale-100' : ' scale-0'}`
 								}>
 								<source
 									src={UnLevelMolecule}
