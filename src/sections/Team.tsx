@@ -46,15 +46,11 @@ export default function Team() {
 			className='overflow-hidden bg-white py-16 text-black lg:py-24'>
 			<div className='container mx-auto'>
 				<h3 className='w-full px-6 text-left text-4xl font-semibold leading-snug lg:text-center'>
-					Our Team
+					Meet Our Team
 				</h3>
 				<div className='mx-auto flex max-w-prose flex-col gap-12 px-6 pt-6 text-lg leading-loose lg:text-center'>
 					<p>
-						Our group of experienced cybersecurity specialists,
-						blockchain engineers, finance proffesionals, and
-						white-hat hackers are united in their pursuit to
-						mitigate the financial impact of exploits and malicious
-						cyber activity.
+						A group of creators, designers and world-class problem solvers
 					</p>
 				</div>
 				<div className='grid h-auto place-items-center py-6 sm:py-12 lg:py-24'>
