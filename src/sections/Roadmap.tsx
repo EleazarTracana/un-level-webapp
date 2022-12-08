@@ -6,7 +6,7 @@ export default function Roadmap() {
 			content: (
 				<p>
 					"With great power comes great responsibility". As we develop
-					the Un-Level DApp, we will also working on our Ambassadors
+					the Un-Level DApp, we'll be working on our Ambassadors
 					Program. A program mainly focused on spreading our vision
 					and values through top level influencers.
 				</p>
@@ -17,7 +17,7 @@ export default function Roadmap() {
 			title: 'Grow as we go',
 			content: (
 				<p>
-					We will adding to the board strategic partners that will
+					We'll be adding to the board strategic partners that will
 					help us along the way and provides us with real utilities to
 					our NFT holders.
 				</p>
@@ -28,7 +28,7 @@ export default function Roadmap() {
 			title: 'Public Sale',
 			content: (
 				<p>
-					Minting goes live on ETH over a smart contract fully audited
+					Minting will go live on ETH over a smart contract fully audited
 					by third parties such as Hacken.
 				</p>
 			),

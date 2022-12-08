@@ -24,7 +24,7 @@ export default function About() {
 						<span className='font-semibold tracking-wider text-site-primary-500'>
 							12 different stages
 						</span>
-						, until it reaches its final unique form.
+						until it reaches its final unique form.
 					</p>
 					<img
 						loading='lazy'
