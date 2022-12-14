@@ -91,7 +91,12 @@ const Navbar = () => {
 	useEffect(() => {
 		let target = window.location.href.slice(window.location.href.indexOf('#'));
 		try {
-			if (document.querySelector(target)) document.querySelector(target)?.scrollIntoView();
+			if (document.querySelector(target)) {
+				// should run after the UI update so move into exact position.
+				setTimeout(() => {
+					document.querySelector(target)?.scrollIntoView();
+				}, 200)
+			}
 		} catch (error) {
 		}
 
