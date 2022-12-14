@@ -39,6 +39,9 @@ module.exports = {
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 			},
+			boxShadow: {
+				'social': '0px 4px 5px -3px #4A1421'
+			}, 
 			keyframes: {
 				wiggle: {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
