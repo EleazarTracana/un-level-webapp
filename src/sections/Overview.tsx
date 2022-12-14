@@ -36,7 +36,7 @@ export default function Overview() {
 						NFTs
 					</h1>
 					<h2 className='text-lg font-semibold sm:text-2xl'>
-						The first NFT Collection that evolves overtime.
+						The first NFT Collection that evolves over time.
 					</h2>
 					<div className='flex w-full flex-row place-content-center items-center justify-start gap-3 pt-3 text-base font-semibold sm:text-lg'>
 						<button

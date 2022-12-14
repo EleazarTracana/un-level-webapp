@@ -9,9 +9,9 @@ export function RouterElement() {
             element: lazyLoadRoutes('Home'),
         },
         {
-            path: 'about',
-            name: 'About',
-            element: lazyLoadRoutes('About'),
+            path: 'origins-of-you',
+            name: 'OriginsOfYou',
+            element: lazyLoadRoutes('Book'),
         },
     ];
 

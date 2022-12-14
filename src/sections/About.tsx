@@ -13,7 +13,7 @@ export default function About() {
 					<p className='max-w-prose transition-all lg:col-start-2 lg:row-start-1'>
 						We believe that the most valuable asset on earth is
 						time. We have developed a mechanism to make our NFT
-						evolve overtime, just as humans do. This way our digital
+						evolve over time, just as humans do. This way our digital
 						asset embraces one of the most beautiful aspects of life
 						itself: evolution.
 						<br />

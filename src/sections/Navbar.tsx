@@ -30,6 +30,11 @@ const navLinks = [
 		targetBlank: true,
 	},
 	{
+		id: 'origins-of-you',
+		title: 'Origins Of You',
+		targetBlank: true,
+	},
+	{
 		id: "#social",
 		title: 'Join us',
 	}
@@ -147,11 +152,6 @@ const Navbar = () => {
 							: ' -translate-y-full'
 					}`
 				}>
-				{/* <img
-				src={logo}
-				alt='Logo'
-				className='h-full w-auto overflow-hidden'
-			/> */}
 				<div
 					className={
 						'container mx-auto grid w-full grid-flow-col items-center justify-between transition-all' +
@@ -159,7 +159,6 @@ const Navbar = () => {
 					}>
 					<span
 						onClick={() => moveHandle('#top', false)}
-						// href='#top'
 						className='cursor-pointer block h-full w-auto overflow-hidden'>
 						<Logo className='h-full w-auto overflow-hidden' />
 					</span>
@@ -190,17 +189,6 @@ const Navbar = () => {
 													moveHandle(navLink.id, navLink.targetBlank === true);
 												}}
 												key={navLink.id}
-												// href={navLink.id}
-												// target={
-												// 	navLink.targetBlank === true
-												// 		? '_blank'
-												// 		: '_parent'
-												// }
-												// rel={
-												// 	navLink.targetBlank === true
-												// 		? 'noopener noreferrer'
-												// 		: ''
-												// }
 												className='cursor-pointer grid h-auto w-auto grid-flow-col items-center gap-1 p-3 text-left'>
 												{navLink.title}
 												{navLink.targetBlank ===
@@ -234,17 +222,6 @@ const Navbar = () => {
 											moveHandle(navLink.id, navLink.targetBlank === true);
 										}}
 										key={navLink.id}
-										// href={navLink.id}
-										// target={
-										// 	navLink.targetBlank === true
-										// 		? '_blank'
-										// 		: '_parent'
-										// }
-										// rel={
-										// 	navLink.targetBlank === true
-										// 		? 'noopener noreferrer'
-										// 		: ''
-										// }
 										className='cursor-pointer group grid h-auto w-auto place-items-center py-3 px-2 text-center'>
 										<div className='relative col-start-1 row-start-1 grid h-full w-full translate-x-0'>
 											<div className='absolute -bottom-3 left-0 right-0 h-1 scale-x-0 rounded-full bg-gradient-to-br from-site-primary-600 to-site-secondary-600 transition-all group-hover:scale-x-100'></div>
@@ -258,26 +235,6 @@ const Navbar = () => {
 									</span>
 								)
 							})}
-
-							<span className={`cursor-pointer group grid h-auto w-auto place-items-center py-3 px-2 text-center relative ${isIndex ? "" : 'header-dropdown-wrap'}`}>
-								<div className='relative col-start-1 row-start-1 grid h-full w-full translate-x-0'>
-									<div className='absolute -bottom-3 left-0 right-0 h-1 scale-x-0 rounded-full bg-gradient-to-br from-site-primary-600 to-site-secondary-600 transition-all group-hover:scale-x-100'></div>
-								</div>
-								<div className='col-start-1 row-start-1 grid translate-x-0 grid-flow-col items-center gap-1'>
-									{
-										isIndex ? (
-											<NavLink className="" to='/about'>About</NavLink>
-										) : ("About")
-									}
-								</div>
-								{
-									isIndex ? "" : (
-										<div className='header-menu w-[200px] absolute right-0 top-[38px] border border-solid border-site-primary-700 bg-white p-2'>
-											<NavLink className='text-sm text-left leading-4' to='/about'>Origins of You</NavLink>
-										</div>
-									)
-								}
-							</span>
 						</div>
 					)}
 				</div>

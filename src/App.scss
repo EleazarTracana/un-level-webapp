@@ -48,7 +48,7 @@
 	padding: 20px;
 
 	background-color: #f5f5f5;
-	color: rgb(180, 86, 130);
+	color: black;
 	border: solid 1px hsl(35, 20, 70);
 
 	overflow: hidden;
@@ -65,6 +65,7 @@
 			height: 30px;
 			font-size: 100%;
 			text-transform: uppercase;
+			font-weight: bolder;
 			text-align: center;
 		}
 
@@ -78,9 +79,10 @@
 		.page-text {
 			height: 100%;
 			flex-grow: 1;
-			font-size: 80%;
+			font-size: 100%;
 			text-align: justify;
 			margin-top: 10px;
+			font-weight: bolder;
 			padding-top: 10px;
 			box-sizing: border-box;
 			border-top: solid 1px hsl(35, 55, 90);
@@ -118,13 +120,19 @@
 
 	&.page-cover {
 		background-color: #1e1616;
-		color: #dfa85c;
+		color: white;
 		border: solid 1px hsl(35, 20, 50);
 
 		h2 {
 			text-align: center;
 			padding-top: 50%;
 			font-size: 210%;
+			font-weight: bold;
+		}
+
+		p {
+			text-align: center;
+			font-size: 100%;
 		}
 
 		&.page-cover-top {

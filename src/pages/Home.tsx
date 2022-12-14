@@ -25,8 +25,6 @@ export default function LandingPage() {
 			<Team />
 			<Wave />
 			<Social />
-			<Wave inverted />
-			<Wave />
 			<Footer />
 		</>
 	)
