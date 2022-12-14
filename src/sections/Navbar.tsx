@@ -7,39 +7,38 @@ import { ReactComponent as Logo } from './../assets/logo.svg'
 let lastKnownScrollPosition = 0
 let lastScrollDirection = 'down'
 
+const navLinks = [
+	{
+		id: '#top',
+		title: 'Overview',
+	},
+	{
+		id: '#about',
+		title: 'About',
+	},
+	{
+		id: '#roadmap',
+		title: 'Roadmap',
+	},
+	{
+		id: '#team',
+		title: 'Team',
+	},
+	{
+		id: 'https://docs.un-level.com/',
+		title: 'Whitepaper',
+		targetBlank: true,
+	},
+	{
+		id: "#social",
+		title: 'Join us',
+	}
+]
+
 const Navbar = () => {
-	const navLinks = [
-		{
-			id: '#top',
-			title: 'Overview',
-		},
-		{
-			id: '#about',
-			title: 'About',
-		},
-		{
-			id: '#roadmap',
-			title: 'Roadmap',
-		},
-		{
-			id: '#team',
-			title: 'Team',
-		},
-		{
-			id: 'https://docs.un-level.com/',
-			title: 'Whitepaper',
-			targetBlank: true,
-		},
-		{
-			id: "#social",
-			title: 'Join us',
-		}
-	]
-
+	const [isIndex, setIndex] = useState(true);
 	const isDesktop = useMediaQuery('(min-width: 768px)')
-
 	const [toggle, setToggle] = useState(false)
-
 	const refMenu = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
@@ -99,6 +98,8 @@ const Navbar = () => {
 			}
 		} catch (error) {
 		}
+
+		if (window.location.pathname != '/') setIndex(false);
 
 		const scrollHandler = (e: Event) => {
 			if (window.scrollY > lastKnownScrollPosition)
@@ -180,7 +181,7 @@ const Navbar = () => {
 							{toggle && (
 								<div
 									ref={refMenu}
-									className='absolute right-0 top-full mt-3 grid h-auto w-max grid-flow-row items-center rounded-2xl bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 p-6 text-left font-medium text-neutral-300'>
+									className='absolute right-0 top-full mt-3 grid h-auto w-max grid-flow-row items-center rounded-2xl bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 p-6 text-left font-medium text-neutral-300 transition-all'>
 									{navLinks.map((navLink) => {
 										return (
 											<span
@@ -207,7 +208,18 @@ const Navbar = () => {
 											</span>
 										)
 									})}
-									<NavLink className="cursor-pointer grid h-auto w-auto grid-flow-col items-center gap-1 p-3 text-left" to='/about'>About</NavLink>
+									{
+										isIndex ?
+											<NavLink className="cursor-pointer grid h-auto w-auto grid-flow-col items-center gap-1 p-3 text-left" to='/about'>About</NavLink>
+											: (
+												<div className='header--mobile-dropdown-wrap'>
+													<NavLink className="cursor-pointer grid h-auto w-auto grid-flow-col items-center gap-1 p-3 text-left" to='/about'>About</NavLink>
+													<div className='header-mobile-menu'>
+														<NavLink className="cursor-pointer grid h-auto w-auto grid-flow-col items-center gap-1 p-3 text-left text-sm" to='/about'>Origins of You</NavLink>
+													</div>
+												</div>
+											)
+									}
 								</div>
 							)}
 						</div>
@@ -246,7 +258,26 @@ const Navbar = () => {
 									</span>
 								)
 							})}
-							<NavLink className="cursor-pointer group grid h-auto w-auto place-items-center py-3 px-2 text-center" to='/about'>About</NavLink>
+
+							<span className={`cursor-pointer group grid h-auto w-auto place-items-center py-3 px-2 text-center relative ${isIndex ? "" : 'header-dropdown-wrap'}`}>
+								<div className='relative col-start-1 row-start-1 grid h-full w-full translate-x-0'>
+									<div className='absolute -bottom-3 left-0 right-0 h-1 scale-x-0 rounded-full bg-gradient-to-br from-site-primary-600 to-site-secondary-600 transition-all group-hover:scale-x-100'></div>
+								</div>
+								<div className='col-start-1 row-start-1 grid translate-x-0 grid-flow-col items-center gap-1'>
+									{
+										isIndex ? (
+											<NavLink className="" to='/about'>About</NavLink>
+										) : ("About")
+									}
+								</div>
+								{
+									isIndex ? "" : (
+										<div className='header-menu w-[200px] absolute right-0 top-[38px] border border-solid border-site-primary-700 bg-white p-2'>
+											<NavLink className='text-sm text-left leading-4' to='/about'>Origins of You</NavLink>
+										</div>
+									)
+								}
+							</span>
 						</div>
 					)}
 				</div>

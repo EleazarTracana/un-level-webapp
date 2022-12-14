@@ -136,3 +136,21 @@
 		}
 	}
 }
+
+.header-dropdown-wrap {
+	&:hover .header-menu {
+		@apply visible opacity-100 transition-all;
+	}
+	.header-menu {
+		@apply invisible opacity-0;
+	}
+}
+
+.header--mobile-dropdown-wrap {
+	&:hover .header-mobile-menu {
+		@apply visible opacity-100 h-full;
+	}
+	.header-mobile-menu {
+		@apply invisible opacity-0 transition-all h-0 pl-4;
+	}
+}
