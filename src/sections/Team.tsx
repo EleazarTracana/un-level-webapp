@@ -7,8 +7,9 @@ import 'swiper/css/pagination'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import useMediaQuery from '../hooks/useMediaQuery'
 
-import eimmyYanez from './../resources/FOTO EIMMY YAÑEZ.jpg'
-import eleazarTracana from './../resources/FOTO ELEAZAR TRACANA.jpg'
+import eimmyYanez from './../resources/eimmy-yanez.jpg'
+import eleazarTracana from './../resources/eleazar-tracana.jpg'
+import lucilaBozich from './../resources/lucila-bozich.jpg'
 
 export default function Team() {
 	const data = [
@@ -28,7 +29,7 @@ export default function Team() {
 			name: 'Lucila Bozich',
 			position: 'Marketing Assistant',
 			linkedIn: 'https://www.linkedin.com/in/lucila-bozich-3a2942213/',
-			picture: '',
+			picture: lucilaBozich,
 		}
 	]
 
