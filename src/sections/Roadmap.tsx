@@ -2,56 +2,53 @@ export default function Roadmap() {
 	const data = [
 		{
 			date: 'Q4 2022',
-			title: 'Spreading Un-Level vision',
+			title: 'Building The Foundations',
 			content: (
 				<p>
-					"With great power comes great responsibility". As we develop
-					the Un-Level DApp, we'll be working on our Ambassadors
-					Program. A program mainly focused on spreading our vision
-					and values through top level influencers.
+					Product definition, action plan, tech stack.
+					Create a strong foundation to build on top of it.
 				</p>
 			),
 		},
 		{
 			date: 'Q1 2023',
-			title: 'Grow as we go',
+			title: 'Artist In The Zone',
 			content: (
 				<p>
-					We'll be adding to the board strategic partners that will
-					help us along the way and provides us with real utilities to
-					our NFT holders.
-				</p>
-			),
-		},
-		{
-			date: 'Q1 2023',
-			title: 'Public Sale',
-			content: (
-				<p>
-					Minting will go live on ETH over a smart contract fully audited
-					by third parties such as Hacken.
+					Beautiful, unique and meaningful Art.
+					Design an impactful NFT Collection representing the Un-Level vision.  
 				</p>
 			),
 		},
 		{
 			date: 'Q2 2023',
-			title: 'MVP Un-Level DApp',
+			title: 'NFT Public Sale',
 			content: (
 				<p>
-					On the second quarter of 2023 we will be releasing our first
-					version of Un-Level DApp, providing key features to our
+					A Molecule that evolve sitting on your hands.
+					Setup The Un-Level Minting Website.
+				</p>
+			),
+		},
+		{
+			date: 'Q3 2023',
+			title: 'Un-Level DApp',
+			content: (
+				<p>
+					A life-changing application hits the blockchain.
+					Release first version of Un-Level DApp, providing key features to our
 					community.
 				</p>
 			),
 		},
 		{
-			date: 'Q3/Q4 2023',
+			date: '2024',
 			title: 'Metaverse',
 			content: (
 				<p>
-					A Metaverse building available to only NFT Holders, hosting
-					meetups and coaching sessions to create the Synergy of a
-					high value community
+					Explore, Connect, Evolve.
+					Allow interoperability to Un-Level NFTs.
+					Create The Big Hall & Smart Gym.
 				</p>
 			),
 		},
