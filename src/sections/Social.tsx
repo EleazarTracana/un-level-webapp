@@ -28,7 +28,7 @@ export default function Social() {
 	return (
 		<section id="social" className="container mx-auto px-6 py-12 lg:py-24">
 			<h3 className='w-full text-left text-4xl font-semibold leading-normal lg:text-center mb-4'>
-				Join Us
+				Join The Path Of Evolution
 			</h3>
 			<p className='text-left sm:text-center mb-4'>Be part of the biggest self-development community</p>
 			<div className="flex flex-col justify-around items-center w-full">
