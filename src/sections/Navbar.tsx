@@ -25,7 +25,7 @@ const navLinks = [
 		title: 'Team',
 	},
 	{
-		id: 'https://docs.un-level.com/',
+		id: 'https://docs.un-level.io/',
 		title: 'Whitepaper',
 		targetBlank: true,
 	},
