@@ -28,9 +28,9 @@ export default function Social() {
 	return (
 		<section id="social" className="container mx-auto px-6 py-12 lg:py-24">
 			<h3 className='w-full text-left text-4xl font-semibold leading-normal lg:text-center mb-4'>
-				Join the Evolution
+				Join Us
 			</h3>
-			<p className='text-left sm:text-center mb-4'>Be a part of the revolution within the DeFi & NFT space like never before!</p>
+			<p className='text-left sm:text-center mb-4'>Be part of the biggest self-development community</p>
 			<div className="flex flex-col justify-around items-center w-full">
 				<div className="flex items-center justify-center">
 					<div className='p-2 sm:p-6 bg-[#41152525] w-[140px] sm:w-[200px] md:w-[200px] lg:w-[220px] mx-2 my-4 rounded shadow-social'>
