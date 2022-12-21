@@ -29,11 +29,11 @@ const navLinks = [
 		title: 'Whitepaper',
 		targetBlank: true,
 	},
-	{
-		id: 'origins-of-you',
-		title: 'Origins Of You',
-		targetBlank: true,
-	},
+	// {
+	// 	id: 'origins-of-you',
+	// 	title: 'Origins Of You',
+	// 	targetBlank: true,
+	// },
 	{
 		id: "#social",
 		title: 'Join us',
