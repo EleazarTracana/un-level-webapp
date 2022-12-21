@@ -12,10 +12,10 @@ export default function CommunityTools() {
 			title: 'Un-Level DApp',
 			content: (
 				<ul className='list-disc text-left'>
-					<li><a href="https://docs.un-level.com/products/digital-content-library" target="_blank">Digital Content Library </a></li>
-					<li><a href="https://docs.un-level.com/products/career-booster-program" target="_blank">Career Booster Program </a></li>
-					<li><a href='https://docs.un-level.com/products/ambassador-program' target="_blank">Ambassador Program</a></li>
-					<li><a href='https://docs.un-level.com/products/ambassador-program' target="_blank">Evolution Lab</a></li>
+					<li><a href="https://docs.un-level.io/products/digital-content-library" target="_blank">Digital Content Library </a></li>
+					<li><a href="https://docs.un-level.io/products/career-booster-program" target="_blank">Career Booster Program </a></li>
+					<li><a href='https://docs.un-level.io/products/ambassador-program' target="_blank">Ambassador Program</a></li>
+					<li><a href='https://docs.un-level.io/products/ambassador-program' target="_blank">Evolution Lab</a></li>
 				</ul>
 			),
 		},
@@ -23,8 +23,8 @@ export default function CommunityTools() {
 			title: 'Metaverse',
 			content: (
 				<ul className='list-disc text-left'>
-					<li><a href="https://docs.un-level.com/products/metaverse" target="_blank">The Big Hall</a></li>
-					<li><a href="https://docs.un-level.com/products/metaverse" target="_blank">Smart Gym</a></li>
+					<li><a href="https://docs.un-level.io/products/metaverse" target="_blank">The Big Hall</a></li>
+					<li><a href="https://docs.un-level.io/products/metaverse" target="_blank">Smart Gym</a></li>
 				</ul>
 			),
 		},
