@@ -1,8 +1,8 @@
-import discord from '../assets//images/social/icons8-discord.svg'
-import twitter from '../assets//images/social/icons8-twitter.svg'
-import medium from '../assets//images/social/icons8-medium-old.svg'
-import linkedin from '../assets//images/social/icons8-linkedin-2.svg'
-import instagram from '../assets//images/social/icons8-instagram.svg'
+import discord from '../assets//images/social/icono_discord.png'
+import twitter from '../assets//images/social/icono_twitter.png'
+import medium from '../assets//images/social/icono_medium.png'
+import linkedin from '../assets//images/social/icono_linkedin.png'
+import instagram from '../assets//images/social/icono_instagram.png'
 
 const socialData = [
 	{
