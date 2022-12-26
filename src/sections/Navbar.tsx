@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { HiExternalLink, HiMenu, HiX } from 'react-icons/hi'
 import useMediaQuery from '../hooks/useMediaQuery'
-import { ReactComponent as Logo } from './../assets/logo.svg'
+import Logo from './../assets/logo-original.png'
 
 let lastKnownScrollPosition = 0
 let lastScrollDirection = 'down'
@@ -160,7 +160,7 @@ const Navbar = () => {
 					<span
 						onClick={() => moveHandle('#top', false)}
 						className='cursor-pointer block h-full w-auto overflow-hidden'>
-						<Logo className='h-full w-auto overflow-hidden' />
+						<img alt='logo' src={Logo} className='h-full w-auto overflow-hidden' />
 					</span>
 					{!isDesktop && (
 						<div className='relative grid h-full w-auto place-items-center'>

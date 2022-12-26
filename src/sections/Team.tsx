@@ -30,6 +30,12 @@ export default function Team() {
 			position: 'Marketing Assistant',
 			linkedIn: 'https://www.linkedin.com/in/lucila-bozich-3a2942213/',
 			picture: lucilaBozich,
+		},
+		{
+			name: 'Azul Pizarro',
+			position: 'Graphic Designer',
+			linkedIn: 'https://www.linkedin.com/in/azulpizarro/',
+			picture: ''
 		}
 	]
 
