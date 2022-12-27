@@ -18,6 +18,7 @@
 		"tailwindcss": "^3.2.4"
 	},
 	"dependencies": {
+		"-": "^0.0.1",
 		"@fontsource/poppins": "^4.5.10",
 		"@testing-library/jest-dom": "^5.16.5",
 		"@testing-library/react": "^13.4.0",
@@ -27,8 +28,10 @@
 		"@types/page-flip": "^2.0.0",
 		"@types/react": "^18.0.26",
 		"@types/react-dom": "^18.0.9",
+		"D": "^1.0.0",
 		"page-flip": "^2.0.7",
 		"react": "^18.2.0",
+		"react-cookie-consent": "^8.0.1",
 		"react-dom": "^18.2.0",
 		"react-icons": "^4.7.1",
 		"react-router-dom": "^6.4.5",
