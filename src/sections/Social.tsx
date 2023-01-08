@@ -30,16 +30,17 @@ export default function Social() {
 			<h3 className='w-full text-left text-4xl font-semibold leading-normal lg:text-center mb-4'>
 				Join The Path Of Evolution
 			</h3>
-			<p className='text-left sm:text-center mb-4'>Be part of the biggest self-development community</p>
+			<p className='text-left sm:text-center mb-4 font-semibold'>Be part of the biggest self-development community</p>
 			<div className="flex flex-col justify-around items-center w-full">
 				<div className="flex items-center justify-center">
 					<div className='p-2 sm:p-6 bg-[#41152525] w-[140px] sm:w-[200px] md:w-[200px] lg:w-[220px] mx-2 my-4 rounded shadow-social'>
-						<a className='w-full flex flex-col items-center' href="https://discord.gg/qWbpWfmvEw" target="__blank">
+						<a className='w-full flex flex-col items-center' href="https://discord.gg/un-level" target="__blank">
 							<div className='w-[80%] mb-4 mx-2'>
 								<img className='w-full' src={discord} alt="discord" />
 							</div>
-							<p className='text-sm sm:text-base text-center'>Join Our Discord</p>
-						</a>
+							<p className='text-sm sm:text-base text-center font-semibold'>Join Our Discord</p>
+							<br/>
+							<iframe src="https://discord.com/widget?id=1051064012684677151&theme=dark" width="350" height="300" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>						</a>
 					</div>
 				</div>
 
@@ -53,7 +54,7 @@ export default function Social() {
 											<div className='w-full max-w-[40px] sm:w-[70px] sm:max-w-[70px]'>
 												<img className='w-full' src={item.image} alt="discord" />
 											</div>
-											<p className='text-center text-xs mt-4 hidden sm:block'>{item.text}</p>
+											<p className='text-center text-xs mt-4 hidden sm:block font-semibold'>{item.text}</p>
 										</a>
 									</div>
 								)
