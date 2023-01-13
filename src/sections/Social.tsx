@@ -34,13 +34,13 @@ export default function Social() {
 			<div className="flex flex-col justify-around items-center w-full">
 				<div className="flex items-center justify-center">
 					<div className='p-2 sm:p-6 bg-[#41152525] w-[140px] sm:w-[200px] md:w-[200px] lg:w-[220px] mx-2 my-4 rounded shadow-social'>
-						<a className='w-full flex flex-col items-center' href="https://discord.gg/un-level" target="__blank">
+						<a className='w-full flex flex-col items-center' href="#" target="__blank">
 							<div className='w-[80%] mb-4 mx-2'>
 								<img className='w-full' src={discord} alt="discord" />
 							</div>
 							<p className='text-sm sm:text-base text-center font-semibold'>Join Our Discord</p>
 							<br/>
-							<iframe src="https://discord.com/widget?id=1051064012684677151&theme=dark" width="350" height="300" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>						</a>
+						</a>
 					</div>
 				</div>
 
