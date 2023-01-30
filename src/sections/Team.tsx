@@ -20,18 +20,6 @@ export default function Team() {
 			picture: eleazarTracana,
 		},
 		{
-			name: 'Eimmy Yanez',
-			position: 'Marketing Lead',
-			linkedIn: 'https://www.linkedin.com/in/eimmy-yanez-a175601b6/',
-			picture: eimmyYanez,
-		},
-		{
-			name: 'Lucila Bozich',
-			position: 'Marketing Assistant',
-			linkedIn: 'https://www.linkedin.com/in/lucila-bozich-3a2942213/',
-			picture: lucilaBozich,
-		},
-		{
 			name: 'Azul Pizarro',
 			position: 'Graphic Designer',
 			linkedIn: 'https://www.linkedin.com/in/azulpizarro/',
